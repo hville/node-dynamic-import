@@ -13,7 +13,9 @@
   "dependencies": {
     "rollup": "^0.47.6"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/node": "^8.0.24"
+  },
   "scripts": {
     "test": "node test",
     "prepublishOnly": "npm test"

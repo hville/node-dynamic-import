@@ -7,11 +7,15 @@ var rollup = require( 'rollup' ),
 module.exports = function importModule(path) {
 	return rollup.rollup({
 		entry: nodePath.resolve(nodePath.dirname(module.parent.filename), path)
-	}).then(getExports)
+	}).then(getCode)
 }
 
-function getExports(bundle) {
+function getCode(bundle) {
+	return bundle.generate({format: 'cjs'}).then(getExports)
+}
+
+function getExports(codeMap) {
 	var m = {exports: {}}
-	Function('module', 'exports', bundle.generate({format: 'cjs'}).code)(m, m.exports)
+	Function('module', 'exports', codeMap.code)(m, m.exports)
 	return m.exports
 }

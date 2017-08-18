@@ -9,6 +9,6 @@ Promise.all([
 			result = times3(plus2(1))
 	if (result !== 9) throw Error('import failed')
 	else console.log('TEST PASSED')
-}).catch(function(err) {
+}, function(err) {
 	throw Error(err)
 })
