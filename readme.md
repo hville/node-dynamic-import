@@ -1,6 +1,6 @@
 # node-dynamic-import
 
-*lighter `rollup` based import function for es modules in node*
+*lighter `rollup`-based import function for es modules in node*
 
 ```javascript
 var esImport = require('./es-import')

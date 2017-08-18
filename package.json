@@ -1,6 +1,6 @@
 {
   "name": "node-dynamic-import",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "light rollup based import function for es modules in node",
   "keywords": [
     "import",
@@ -11,7 +11,7 @@
   ],
   "main": "es-import.js",
   "dependencies": {
-    "rollup": "^0.45.2"
+    "rollup": "^0.47.6"
   },
   "devDependencies": {},
   "scripts": {
