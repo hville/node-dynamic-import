@@ -1,6 +1,6 @@
 {
   "name": "node-dynamic-import",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "light rollup based import function for es modules in node",
   "keywords": [
     "import",
